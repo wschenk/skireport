@@ -14,6 +14,7 @@ export async function getMohawkStatus() {
       }
 }
 export function parseMohawkStatus( html: string ) {
+    console.log(html)
     const document = new DOMParser().parseFromString(html, 'text/html');
       
     if( document ) {
